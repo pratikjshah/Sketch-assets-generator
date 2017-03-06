@@ -6,7 +6,7 @@
     "homepage": "http://pratikshah.website/",
     "updateURL": "https://github.com/pratikjshah/Sketch-assets-generator",
     "downloadURL": "https://github.com/pratikjshah/Sketch-assets-generator",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "identifier": "website.pratikshah.assets-export",
     "commands" : [
       {

@@ -51,13 +51,13 @@ function showAvailableUpdateDialog(context) {
 function checkForUpdate(context) {
   //context.document.showMessage("inside update:");
 
-    var remoteManifestUrl = "https://raw.githubusercontent.com/pratikjshah/Sketch-assets-generator/master/PS%20assets%20generator.sketchplugin/Contents/Sketch/manifest.json";
+    var remoteManifestUrl = "https://raw.githubusercontent.com/pratikjshah/Sketch-assets-generator/master/PS-assets-generator.sketchplugin/Contents/Sketch/manifest.json";
     //var remoteManifestUrl = "https://raw.githubusercontent.com/pratikjshah/Sketch-assets-generator/master/PS-assets-generator.sketchplugin/Contents/Sketch/manifest.json";
     var remoteManifest = getRemoteJson(remoteManifestUrl);
     //context.document.showMessage("remoteManifest: " + remoteManifest.version);
     if (remoteManifest.version) {
         if (context.plugin.version() == remoteManifest.version) {
-          context.document.showMessage(configData.pluginName+" " + configData.localVersion + " is currently the newest version available.");
+          context.document.showMessage(context.plugin.name()+" " + context.plugin.version() + " is currently the newest version available.");
         } else {
           //context.document.showMessage("need update:");
           showAvailableUpdateDialog(context);

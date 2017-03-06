@@ -1,0 +1,109 @@
+{
+    "name": "🖼 Export Generator",
+    "description": "One click solution for your assets export problems :)",
+    "author": "Pratik Shah",
+    "email": "hello@pratikshah.website",
+    "homepage": "http://pratikshah.website/",
+    "updateURL": "https://github.com/pratikjshah/Sketch-assets-generator",
+    "downloadURL": "https://github.com/pratikjshah/Sketch-assets-generator",
+    "version": "1.2.0",
+    "identifier": "website.pratikshah.assets-export",
+    "commands" : [
+      {
+        "script" : "handler.js",
+        "handler" : "exportIOS",
+        "shortcut" : "option shift cmd i",
+        "name" : "iOS Exports",
+        "identifier" : "exportIOS"
+      },
+      {
+        "script" : "handler.js",
+        "handler" : "exportAndroid",
+        "shortcut" : "option shift cmd a",
+        "name" : "Android Exports",
+        "identifier" : "exportAndroid"
+      },
+      {
+        "script" : "handler.js",
+        "handler" : "exportAll",
+        "shortcut" : "option shift cmd e",
+        "name" : "iOS and Android Exports",
+        "identifier" : "exportAll"
+      },
+      {
+        "script" : "handler.js",
+        "handler" : "exportPDF",
+        "shortcut" : "option shift cmd p",
+        "name" : "PDF Exports",
+        "identifier" : "exportPDF"
+      },
+      {
+        "script" : "handler.js",
+        "handler" : "exportSVG",
+        "shortcut" : "option shift cmd g",
+        "name" : "SVG Exports",
+        "identifier" : "exportSVG"
+      },
+      {
+        "script" : "handler.js",
+        "handler" : "clear",
+        "shortcut" : "option shift cmd c",
+        "name" : "Clear Exports",
+        "identifier" : "clear"
+      },
+      {
+        "script" : "script.cocoascript",
+        "handler" : {
+                      "run" : "onRun"
+                    },
+        "shortcut" : "cmd e",
+        "name" : "Collapse Artboards And Groups",
+        "identifier" : "collapseArtboardsAndGroups"
+      },
+      {
+        "script" : "handler.js",
+        "handler" : "aboutPratikShah",
+        "shortcut" : "",
+        "name" : "About Pratik Shah",
+        "identifier" : "aboutPratikShah"
+      },
+      {
+          "script": "help.js",
+          "handler": "reportIssue",
+          "shortcut": "",
+          "name": "Report issue",
+          "identifier": "reportIssue"
+      },
+      {
+          "script": "help.js",
+          "handler": "checkForUpdate",
+          "shortcut": "",
+          "name": "Check for update",
+          "identifier": "checkForUpdate"
+      },
+      {
+          "script": "help.js",
+          "handler": "aboutPratikShah",
+          "shortcut": "",
+          "name": "About Pratik Shah",
+          "identifier": "aboutPratikShah"
+      }
+    ],
+    "menu" : {
+      "items" : [
+        "exportIOS",
+        "exportAndroid",
+        "exportAll",
+        "exportPDF",
+        "exportSVG",
+        "clear",
+        "-",
+        "collapseArtboardsAndGroups",
+        "-",
+        "reportIssue",
+        "checkForUpdate",
+        "-",
+        "aboutPratikShah"
+      ]
+    }
+}
